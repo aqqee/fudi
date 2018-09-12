@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/login_bg">
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="380dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:hint="Email Address"
+        android:textColorHint="#C0C0C0"
+        android:drawableTint="#C0C0C0"
+        android:inputType="text"
+        android:textColor="#ffff"
+        android:drawablePadding="20dp"
+        android:drawableLeft="@drawable/email"
+        />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="13dp"
+        android:drawableLeft="@drawable/password"
+        android:drawableTint="#C0C0C0"
+        android:hint="Password"
+        android:drawablePadding="25dp"
+        android:inputType="textPassword"
+        android:textColor="#ffff"
+        android:textColorHint="#C0C0C0" />
+
+    <Button
+        android:layout_width="330dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="35dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/login"/>
+
+    <Button
+        android:layout_width="330dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/fb"/>
+</LinearLayout>
