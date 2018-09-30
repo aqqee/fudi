@@ -7,6 +7,8 @@ import android.support.v4.graphics.drawable.RoundedBitmapDrawable;
 import android.support.v4.graphics.drawable.RoundedBitmapDrawableFactory;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.View;
 import android.view.WindowManager;
 import android.widget.ImageView;
 
@@ -27,6 +29,15 @@ public class MainActivity extends AppCompatActivity {
         roundedBitmapDrawable.setCircular(true);
         imageView.setImageDrawable(roundedBitmapDrawable);
 
+            side_tab = findViewById(R.id.side_tab);
+            expanded_menu = (ImageView) side_tab.findViewById(R.id.expanded_menu);
 
+
+  expanded_menu.setOnClickListener(new View.OnClickListener(){
+                public void onClick(View v) {
+                    side_tab.setVisibility(View.INVISIBLE);
+                    drawer.openDrawer(GravityCompat.START);
+                }
+            });
     }
 }
